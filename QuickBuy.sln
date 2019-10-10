@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Dominio", "QuickBuy.Dominio\QuickBuy.Dominio.csproj", "{59B1E88A-D522-4982-B5AC-38630A7683C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Repositorio", "QuickBuy.Repositorio\QuickBuy.Repositorio.csproj", "{DF9EE597-A3B2-42F1-A8B5-00A798F2118A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Web", "QuickBuy.Web\QuickBuy.Web.csproj", "{1F58541F-6575-4E87-9507-3754F5511C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59B1E88A-D522-4982-B5AC-38630A7683C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B1E88A-D522-4982-B5AC-38630A7683C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B1E88A-D522-4982-B5AC-38630A7683C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B1E88A-D522-4982-B5AC-38630A7683C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9EE597-A3B2-42F1-A8B5-00A798F2118A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9EE597-A3B2-42F1-A8B5-00A798F2118A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9EE597-A3B2-42F1-A8B5-00A798F2118A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9EE597-A3B2-42F1-A8B5-00A798F2118A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F58541F-6575-4E87-9507-3754F5511C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F58541F-6575-4E87-9507-3754F5511C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F58541F-6575-4E87-9507-3754F5511C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F58541F-6575-4E87-9507-3754F5511C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
