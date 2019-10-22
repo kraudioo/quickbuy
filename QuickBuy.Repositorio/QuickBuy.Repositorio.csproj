@@ -2,6 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositorios\" />
+    <Folder Include="Config\" />
+    <Folder Include="Contexto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuickBuy.Dominio\QuickBuy.Dominio.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>

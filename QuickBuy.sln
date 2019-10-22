@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Repositorio", "Qui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Web", "QuickBuy.Web\QuickBuy.Web.csproj", "{1F58541F-6575-4E87-9507-3754F5511C17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Repository", "QuickBuy.Repository\QuickBuy.Repository.csproj", "{14344A89-0A5B-4B42-ACAC-ADCF60DEB6DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{1F58541F-6575-4E87-9507-3754F5511C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F58541F-6575-4E87-9507-3754F5511C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F58541F-6575-4E87-9507-3754F5511C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14344A89-0A5B-4B42-ACAC-ADCF60DEB6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14344A89-0A5B-4B42-ACAC-ADCF60DEB6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14344A89-0A5B-4B42-ACAC-ADCF60DEB6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14344A89-0A5B-4B42-ACAC-ADCF60DEB6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

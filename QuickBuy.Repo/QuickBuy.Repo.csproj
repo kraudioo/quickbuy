@@ -18,51 +18,15 @@
       <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
-    <None Remove="ClientApp\src\app\produto\produto.component.ts" />
-    <None Remove="ClientApp\src\app\usuario\login\login.component.ts" />
-    <None Remove="ClientApp\src\app\modelo\usuario.ts" />
-    <None Remove="ClientApp\src\app\autorizacao\guarda.rotas.ts" />
-    <None Remove="ClientApp\src\app\servicos\usuario\usuario.servicos.ts" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\QuickBuy.Repositorio\QuickBuy.Repositorio.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="DesignTimeDbContextFactory.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="config.jason">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ClientApp\src\app\produto\" />
-    <Folder Include="ClientApp\src\app\usuario\" />
-    <Folder Include="ClientApp\src\app\usuario\cadastro\" />
-    <Folder Include="ClientApp\src\app\usuario\login\" />
-    <Folder Include="ClientApp\src\app\modelo\" />
-    <Folder Include="ClientApp\src\app\autorizacao\" />
-    <Folder Include="ClientApp\src\app\servicos\" />
-    <Folder Include="ClientApp\src\app\servicos\usuario\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\src\app\produto\produto.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\usuario\login\login.component.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\modelo\usuario.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\autorizacao\guarda.rotas.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\servicos\usuario\usuario.servicos.ts" />
-  </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
